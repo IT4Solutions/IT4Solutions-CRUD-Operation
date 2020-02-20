@@ -1,0 +1,13 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CRUD_Operations.General
+{
+    public class ApplicationConnection
+    {
+        public static string ConnectionString = @"Data Source=DESKTOP-KK6HVI8\SQLEXPRESS;Initial Catalog=IT4Solutions_CRUD;Integrated Security=True";
+    }
+}

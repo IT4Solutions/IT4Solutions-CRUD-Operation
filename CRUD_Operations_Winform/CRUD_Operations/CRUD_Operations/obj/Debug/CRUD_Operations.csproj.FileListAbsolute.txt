@@ -1,0 +1,30 @@
+C:\Users\Raouf Yasin\Desktop\CRUD_Operations_Winform\CRUD_Operations\CRUD_Operations\bin\Debug\CRUD_Operations.exe.config
+C:\Users\Raouf Yasin\Desktop\CRUD_Operations_Winform\CRUD_Operations\CRUD_Operations\bin\Debug\CRUD_Operations.exe
+C:\Users\Raouf Yasin\Desktop\CRUD_Operations_Winform\CRUD_Operations\CRUD_Operations\bin\Debug\CRUD_Operations.pdb
+C:\Users\Raouf Yasin\Desktop\CRUD_Operations_Winform\CRUD_Operations\CRUD_Operations\obj\Debug\CRUD_Operations.Form1.resources
+C:\Users\Raouf Yasin\Desktop\CRUD_Operations_Winform\CRUD_Operations\CRUD_Operations\obj\Debug\CRUD_Operations.Properties.Resources.resources
+C:\Users\Raouf Yasin\Desktop\CRUD_Operations_Winform\CRUD_Operations\CRUD_Operations\obj\Debug\CRUD_Operations.csproj.GenerateResource.cache
+C:\Users\Raouf Yasin\Desktop\CRUD_Operations_Winform\CRUD_Operations\CRUD_Operations\obj\Debug\CRUD_Operations.exe
+C:\Users\Raouf Yasin\Desktop\CRUD_Operations_Winform\CRUD_Operations\CRUD_Operations\obj\Debug\CRUD_Operations.pdb
+C:\Users\Raouf Yasin\Desktop\CRUD_Operations_Winform\CRUD_Operations\CRUD_Operations\bin\Debug\MetroFramework.dll
+C:\Users\Raouf Yasin\Desktop\CRUD_Operations_Winform\CRUD_Operations\CRUD_Operations\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Raouf Yasin\Desktop\CRUD_Operations_Winform\CRUD_Operations\CRUD_Operations\bin\Debug\EntityFramework.dll
+C:\Users\Raouf Yasin\Desktop\CRUD_Operations_Winform\CRUD_Operations\CRUD_Operations\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Raouf Yasin\Desktop\CRUD_Operations_Winform\CRUD_Operations\CRUD_Operations\bin\Debug\EntityFramework.xml
+C:\Users\Raouf Yasin\Desktop\CRUD_Operations_Winform\CRUD_Operations\CRUD_Operations\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Raouf Yasin\Desktop\CRUD_Operations_Winform\CRUD_Operations\CRUD_Operations\obj\Debug\CRUD_Operations.csprojResolveAssemblyReference.cache
+C:\Users\IT4Solutions\Desktop\CRUD_Operations_Winform\CRUD_Operations\CRUD_Operations\bin\Debug\CRUD_Operations.exe.config
+C:\Users\IT4Solutions\Desktop\CRUD_Operations_Winform\CRUD_Operations\CRUD_Operations\obj\Debug\CRUD_Operations.exe
+C:\Users\IT4Solutions\Desktop\CRUD_Operations_Winform\CRUD_Operations\CRUD_Operations\obj\Debug\CRUD_Operations.pdb
+C:\Users\IT4Solutions\Desktop\CRUD_Operations_Winform\CRUD_Operations\CRUD_Operations\bin\Debug\CRUD_Operations.exe
+C:\Users\IT4Solutions\Desktop\CRUD_Operations_Winform\CRUD_Operations\CRUD_Operations\bin\Debug\CRUD_Operations.pdb
+C:\Users\IT4Solutions\Desktop\CRUD_Operations_Winform\CRUD_Operations\CRUD_Operations\bin\Debug\EntityFramework.dll
+C:\Users\IT4Solutions\Desktop\CRUD_Operations_Winform\CRUD_Operations\CRUD_Operations\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\IT4Solutions\Desktop\CRUD_Operations_Winform\CRUD_Operations\CRUD_Operations\bin\Debug\MetroFramework.dll
+C:\Users\IT4Solutions\Desktop\CRUD_Operations_Winform\CRUD_Operations\CRUD_Operations\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\IT4Solutions\Desktop\CRUD_Operations_Winform\CRUD_Operations\CRUD_Operations\bin\Debug\EntityFramework.xml
+C:\Users\IT4Solutions\Desktop\CRUD_Operations_Winform\CRUD_Operations\CRUD_Operations\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\IT4Solutions\Desktop\CRUD_Operations_Winform\CRUD_Operations\CRUD_Operations\obj\Debug\CRUD_Operations.csprojResolveAssemblyReference.cache
+C:\Users\IT4Solutions\Desktop\CRUD_Operations_Winform\CRUD_Operations\CRUD_Operations\obj\Debug\CRUD_Operations.Form1.resources
+C:\Users\IT4Solutions\Desktop\CRUD_Operations_Winform\CRUD_Operations\CRUD_Operations\obj\Debug\CRUD_Operations.Properties.Resources.resources
+C:\Users\IT4Solutions\Desktop\CRUD_Operations_Winform\CRUD_Operations\CRUD_Operations\obj\Debug\CRUD_Operations.csproj.GenerateResource.Cache
