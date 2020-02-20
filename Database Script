@@ -1,0 +1,199 @@
+USE [master]
+GO
+/****** Object:  Database [IT4Solutions_CRUD]    Script Date: 2/21/2020 12:19:42 AM ******/
+CREATE DATABASE [IT4Solutions_CRUD]
+GO
+
+USE [IT4Solutions_CRUD]
+GO
+/****** Object:  StoredProcedure [dbo].[Students_Delete]    Script Date: 2/21/2020 12:19:42 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[Students_Delete]
+(
+	@StudentId INT
+)
+AS 
+	BEGIN
+		DELETE FROM [dbo].[Students]
+      WHERE [StudentId] = @StudentId
+	END
+GO
+/****** Object:  StoredProcedure [dbo].[Students_GetRecord]    Script Date: 2/21/2020 12:19:42 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[Students_GetRecord]
+AS
+	BEGIN
+		SELECT [StudentId]
+			  ,[Name] AS 'Student Name'
+			  ,[FatherName] AS 'Father Name'
+			  ,[Roll] AS 'Roll Number'
+			  ,[Address]
+			  ,[Mobile]
+		FROM  [dbo].[Students]
+	END
+GO
+/****** Object:  StoredProcedure [dbo].[Students_Insert]    Script Date: 2/21/2020 12:19:42 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[Students_Insert]
+(
+	 @Name			NVARCHAR(50)
+    ,@FatherName	NVARCHAR(50)
+    ,@Roll			NVARCHAR(10)
+    ,@Address		NVARCHAR(500)
+    ,@Mobile		NVARCHAR(15)
+)
+AS
+	BEGIN
+		INSERT INTO [dbo].[Students]
+           ([Name]
+           ,[FatherName]
+           ,[Roll]
+           ,[Address]
+           ,[Mobile])
+     VALUES
+           (@Name		
+		   ,@FatherName
+		   ,@Roll		
+		   ,@Address	
+		   ,@Mobile)
+	END
+GO
+/****** Object:  StoredProcedure [dbo].[Students_SaveOrUpdate]    Script Date: 2/21/2020 12:19:42 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE  PROCEDURE [dbo].[Students_SaveOrUpdate]
+(
+	 @StudentId		INT
+	,@Name			NVARCHAR(50)
+    ,@FatherName	NVARCHAR(50)
+    ,@Roll			NVARCHAR(10)
+    ,@Address		NVARCHAR(500)
+    ,@Mobile		NVARCHAR(15)
+)
+AS
+	BEGIN
+
+		IF @StudentId > 0
+			BEGIN
+				UPDATE [dbo].[Students]
+				SET    [Name] = @Name
+					  ,[FatherName] = @FatherName
+					  ,[Roll] = @Roll
+					  ,[Address] = @Address
+					  ,[Mobile] = @Mobile
+				WHERE [StudentId] = @StudentId
+			END
+		ELSE
+			BEGIN
+				INSERT INTO [dbo].[Students]
+					   ([Name]
+					   ,[FatherName]
+					   ,[Roll]
+					   ,[Address]
+					   ,[Mobile])
+				 VALUES
+					   (@Name		
+					   ,@FatherName
+					   ,@Roll		
+					   ,@Address	
+					   ,@Mobile)
+			END
+		
+	END
+GO
+/****** Object:  StoredProcedure [dbo].[Students_SearchByName]    Script Date: 2/21/2020 12:19:42 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[Students_SearchByName]
+(
+	@StudentName NVARCHAR(50)
+)
+AS
+	BEGIN
+		SELECT [StudentId]
+			  ,[Name] AS 'Student Name'
+			  ,[FatherName] AS 'Father Name'
+			  ,[Roll] AS 'Roll Number'
+			  ,[Address]
+			  ,[Mobile]
+		FROM  [dbo].[Students]
+		WHERE [Name] LIKE +'%' +  @StudentName  + '%'
+	END
+GO
+/****** Object:  StoredProcedure [dbo].[Students_UpdateStudent]    Script Date: 2/21/2020 12:19:42 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[Students_UpdateStudent]
+(
+	 @StudentId		INT
+	,@Name			NVARCHAR(50)
+    ,@FatherName	NVARCHAR(50)
+    ,@Roll			NVARCHAR(10)
+    ,@Address		NVARCHAR(500)
+    ,@Mobile		NVARCHAR(15)
+)
+AS
+	BEGIN
+		UPDATE [dbo].[Students]
+		SET    [Name] = @Name
+			  ,[FatherName] = @FatherName
+			  ,[Roll] = @Roll
+			  ,[Address] = @Address
+			  ,[Mobile] = @Mobile
+		WHERE [StudentId] = @StudentId
+	END
+GO
+/****** Object:  Table [dbo].[Students]    Script Date: 2/21/2020 12:19:42 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Students](
+	[StudentId] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [nvarchar](50) NULL,
+	[FatherName] [nvarchar](50) NULL,
+	[Roll] [nvarchar](10) NULL,
+	[Address] [nvarchar](500) NULL,
+	[Mobile] [nvarchar](15) NULL,
+ CONSTRAINT [PK_Students] PRIMARY KEY CLUSTERED 
+(
+	[StudentId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+SET IDENTITY_INSERT [dbo].[Students] ON 
+
+GO
+INSERT [dbo].[Students] ([StudentId], [Name], [FatherName], [Roll], [Address], [Mobile]) VALUES (2, N'Abdullah', N'Muhamamd Akram', N'', N'', N'')
+GO
+INSERT [dbo].[Students] ([StudentId], [Name], [FatherName], [Roll], [Address], [Mobile]) VALUES (3, N'Rehman', N'Muhammad Kareem', N'', N'', N'')
+GO
+INSERT [dbo].[Students] ([StudentId], [Name], [FatherName], [Roll], [Address], [Mobile]) VALUES (4, N'Muhammad Raza', N'Abid', N'789', N'Lahore', N'03456')
+GO
+INSERT [dbo].[Students] ([StudentId], [Name], [FatherName], [Roll], [Address], [Mobile]) VALUES (5, N'Muhammad Ali', N'Muhammad Umar', N'456', N'H.No. xyz', N'789')
+GO
+INSERT [dbo].[Students] ([StudentId], [Name], [FatherName], [Roll], [Address], [Mobile]) VALUES (6, N'Husnain Raza', N'Muhammad Ali', N'', N'', N'')
+GO
+SET IDENTITY_INSERT [dbo].[Students] OFF
+GO
+USE [master]
+GO
+ALTER DATABASE [IT4Solutions_CRUD] SET  READ_WRITE 
+GO
